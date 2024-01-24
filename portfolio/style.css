@@ -1,0 +1,269 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+h2{
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(40, 35, 35);
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    margin-inline: 20px;
+    margin-right: 11px;
+    font-size: 17px;
+}
+
+.logo {
+    margin-left: 20px
+}
+
+ul li a:hover,
+ul li .active {
+    border-bottom: 2px solid white;
+    color: rgb(32, 209, 32);
+}
+
+.icon {
+    align-items: center;
+    font-size: 30px;
+    margin-right: 12px;
+    display: none;
+}
+
+.header {
+    display: flex;
+    /*border:2px solid red;*/
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.profileimg img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 70px 0px;
+    border: 5px solid rgb(90, 87, 87);
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(210, 209, 209);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.about-me {
+    /*border:2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bio {
+    /*border:2px solid green;*/
+    height: 50%;
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 50px;
+    background-color: rgb(239, 234, 234);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 23px;
+    border-radius: 10px;
+
+}
+
+.my-skills {
+    /*border:2px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-container {
+    height: 50%;
+    width: 50%;
+    font-size: 1.2rem;
+    padding: 50px;
+    background-color: rgb(239, 234, 234);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin: 23px;
+    border-radius: 10px;
+}
+
+.projects {
+   /* border: 2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container {
+    display: flex;
+}
+
+.project-card {
+    display: flex;
+    border: 2px solid grey;
+    flex-direction: column;
+    align-items: baseline;
+    height: 140px;
+    width: 250px;
+    padding: 23px;
+    margin: 75px 35px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 10px;
+
+
+
+}
+
+
+
+
+.caluculator-project h3 {
+    position: absolute;
+    text-align: center;
+}
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap:30px;
+}
+
+
+/*for navigation bar*/
+@media screen and (max-width:600px) {
+    nav ul {
+        display: none;
+    }
+
+    .icon {
+        display: flex;
+    }
+
+    .showData {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        gap: 22px;
+        background-color: #23242a;
+        height: 200px;
+        opacity: 0.7;
+    }
+
+}
+footer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:10px;
+  /* border:2px solid red;*/
+   padding:7px;
+   margin-top:10px;
+   background-color: black;
+   color: whitesmoke; 
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+/*for header section*/
+@media screen and (max-width:785px) {
+    .header {
+        display: flex;
+        /*border:2px solid red;*/
+        /*justify-content: space-evenly;*/
+        flex-direction: column;
+    }
+
+    .profileimg img {
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        margin: 70px 0px;
+        border: 5px solid rgb(90, 87, 87);
+    }
+
+    .btn {
+        padding: 10px;
+        border-radius: 10px;
+        border-style: none;
+        background-color: rgb(210, 209, 209);
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .tagline {
+        margin-left: 23px;
+    }
+}
+/*for project cards*/
+@media screen and (max-width:785px) {
+   /* project-card {
+    display: flex;
+    border: 2px solid grey;
+    flex-direction: column;
+    align-items: baseline;
+    height: 140px;
+    width: 250px;
+    padding: 23px;
+    margin: 75px 35px;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.5rem;
+    border-radius: 10px;*/
+     .project-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+
+}
